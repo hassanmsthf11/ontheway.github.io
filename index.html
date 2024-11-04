@@ -243,6 +243,29 @@
     </style>
 </head>
 <body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3NIPennDkJfK4MZap9pC_0R64_ED69CY",
+    authDomain: "ontheway-7a170.firebaseapp.com",
+    projectId: "ontheway-7a170",
+    storageBucket: "ontheway-7a170.firebasestorage.app",
+    messagingSenderId: "2572780749",
+    appId: "1:2572780749:web:e75ee0e14a26d137621584",
+    measurementId: "G-WTPBRM9KG1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
